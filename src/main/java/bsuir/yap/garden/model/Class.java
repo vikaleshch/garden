@@ -8,16 +8,16 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
  */
 public class Class {
     @Id
-    private long id;
+    private String id;
     private String name;
-    @DBRef
+    private String description;
     private Phylum phylum;
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -27,6 +27,14 @@ public class Class {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Phylum getPhylum() {

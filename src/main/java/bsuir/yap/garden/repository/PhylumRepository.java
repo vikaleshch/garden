@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin
 @RepositoryRestResource
-public interface PhylumRepository extends CrudRepository<Phylum, Long> {
+public interface PhylumRepository extends CrudRepository<Phylum, String> {
 }

@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin
 @RepositoryRestResource
-public interface PlantRepository extends CrudRepository<Plant, Long> {
+public interface PlantRepository extends CrudRepository<Plant, String> {
 }
