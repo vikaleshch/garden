@@ -1,5 +1,5 @@
 (function() {
 
-angular.module('GardenUI', ['ngRoute']);
+angular.module('GardenUI', ['ngRoute', 'ui.bootstrap']);
 
 })();

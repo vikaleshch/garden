@@ -1,5 +1,6 @@
 package bsuir.yap.garden.config;
 
+import bsuir.yap.garden.model.Card;
 import bsuir.yap.garden.model.Class;
 import bsuir.yap.garden.model.Family;
 import bsuir.yap.garden.model.Genus;
@@ -15,6 +16,6 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
 public class RepositoryConfig extends RepositoryRestConfigurerAdapter {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-        config.exposeIdsFor(Plant.class, Species.class, Genus.class, Family.class, Order.class, Class.class, Phylum.class);
+        config.exposeIdsFor(Plant.class, Species.class, Genus.class, Family.class, Order.class, Class.class, Phylum.class, Card.class);
     }
 }
